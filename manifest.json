@@ -1,0 +1,14 @@
+{
+  "name": "Girlfriend in Your Browser",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "This chrome extension is a virtual version of myself to annoy my friends.",
+  "omnibox": { "keyword": "color" },
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+    "https://ashlib.github.io/browser-girlfriend/"
+  ]
+}

@@ -1,2 +1,2 @@
 # browser-girlfriend
-Website for browser-girlfriend-extension
+A virtual me to keep my boyfriend company
