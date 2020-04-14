@@ -2,13 +2,13 @@
   "name": "Girlfriend in Your Browser",
   "manifest_version": 2,
   "version": "1.0",
-  "description": "This chrome extension is a virtual version of myself to annoy my friends.",
-  "omnibox": { "keyword": "color" },
+  "description": "This chrome extension is activates a virtual me to keep my boyfriend company",
+  "omnibox": { "keyword": "I'm" },
   "background": {
     "scripts": ["background.js"]
   },
 
   "permissions": [
-    "https://ashlib.github.io/browser-girlfriend/"
+    "activeTab"
   ]
 }
