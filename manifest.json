@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "version": "1.0",
   "description": "This chrome extension is activates a virtual me to keep my boyfriend company",
-  "omnibox": { "keyword": "I'm" },
+  "omnibox": { "keyword": "Im" },
   "background": {
     "scripts": ["background.js"]
   },
