@@ -22,26 +22,40 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
 
     code:
     `
+    var images = [
+    "images/myAvatarHugs.png",
+    "images/myAvatarLaugh.png",
+    "images/myAvatarSmile.png",
+    "images/myAvatarYay.png",
+    "images/myAvatarCall.png",
+    "images/myAvatarSleep.png",
+    ];
+
     if ("${text}" == "sad" || "${text}" == "depressed") {
       document.getElementById("text").innerHTML = "Oh no! Hugs?";
+      document.getElementById("avatar").src = images[0];
     }
 
     if ("${text}" == "bored") {
-      document.getElementById("text").innerHTML = "No worries, look at what all these funny memes I found on Instagram! I DIED!";
+      document.getElementById("text").innerHTML = "No worries, look at all these funny Instagram posts! I DIED!";
+      document.getElementById("avatar").src = images[1];
     }
 
     if ("${text}" == "fine"  || "${text}" == "okay" ) {
-      document.getElementById("text").innerHTML = "That's not good enough! Come now, smile!!!!";
+      document.getElementById("text").innerHTML = "That's not good enough! Let me see you smile!!!!";
+      document.getElementById("avatar").src = images[2];
     }
 
     if ("${text}" == "happy") {
       document.getElementById("text").innerHTML = "Yay!!!";
+      document.getElementById("avatar").src = images[3];
     }
 
     if ("${text}" == "missing you") {
       document.getElementById("text").innerHTML = "Then Call Me!";
-    }
+      document.getElementById("avatar").src = images[4];
 
+    }
 
   //   var h = document.createElement("H1"); // Create the H1 element
   // if ("${text}" == "easter") {
@@ -59,24 +73,9 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
   //     p_tags[i].setAttribute("style","font-size:"+40+"px");
   // }
   //
-  //
-  // var images = [
-  // "https://media.giphy.com/media/l41YgOPSjVe47TTRm/giphy.gif",
-  // "https://media.giphy.com/media/3o7buctjKD8g5r4544/giphy.gif",
-  // ];
-  //
-  // for (var i in document.images) {
-  //     var targetImage = document.images[i];
-  //     var randomImage = images[Math.floor(Math.random() * images.length)];
-  //     var height = targetImage.height;
-  //     var width = targetImage.width;
-  //
-  //     targetImage.src = randomImage;
-  //     targetImage.height = height;
-  //     targetImage.width = width;
-  // }
-  //
-  //   `
+
+     `
 
   });
 });
+//
