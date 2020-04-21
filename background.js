@@ -83,7 +83,6 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
       document.getElementById("link").style.display = "block";
 
       scrollToTop();
-      videoOff()
     }
 
     if ("${text}" == "bored") {
@@ -109,12 +108,11 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
       document.body.style.backgroundSize = "0px";
 
       scrollToTop();
-      videoOff()
     }
 
 
     if ("${text}" == "fine"  || "${text}" == "good" || "${text}" == "okay") {
-      document.body.style.marginBottom = "10px";
+      document.body.style.marginBottom = "-100px";
 
       document.getElementById("text").innerHTML = "That's not good enough! You should be great! Let me see you smile!!!!";
       document.getElementById("avatar").src = avatar[2];
@@ -163,7 +161,6 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
       document.body.style.backgroundSize = "0px";
 
       scrollToTop();
-      videoOff()
     }
 
     if ("${text}" == "missing you") {
@@ -190,7 +187,6 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
       document.body.style.backgroundSize = "0px";
 
       scrollToTop();
-      videoOff()
     }
 
     function scrollToTop() {
