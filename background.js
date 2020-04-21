@@ -153,8 +153,9 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
       document.getElementById("cam").style.display = "none";
       document.getElementById("camButton").style.display = "none";
       document.getElementById("camPhoto").style.display = "none";
+      document.getElementById("cam-note").style.display = "none";
       document.getElementById("cheerup-note").style.display = "none";
-      document.getElementById("link").style.display = "block";
+      document.getElementById("link").style.display = "none";
 
       document.getElementById("html").style.backgroundSize = "0px";
       document.body.style.backgroundSize = "0px";
