@@ -1,6 +1,6 @@
 now = new Date();
 hour = now.getHours();
-if (hour >= 1  && hour < 9)
+if (hour >= 1  && hour < 8)
 {
   $("html").css({
       "background-color": "black"
