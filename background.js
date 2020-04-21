@@ -68,9 +68,9 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
       document.getElementById("text").innerHTML = "Oh no! Hugs?";
       document.getElementById("avatar").src = avatar[0];
 
-      document.getElementById("heart-img").style.display = "block";
       document.getElementById("html").style.backgroundSize = "200px";
       document.body.style.backgroundSize = "200px";
+      document.getElementById("heart-img").style.display = "block";
       document.getElementById("cheerup-note").style.display = "block";
 
       document.getElementById("insta").style.display = "none";
@@ -80,7 +80,7 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
       document.getElementById("cam-note").style.display = "none";
       document.getElementById("fireworks").style.display = "none";
       document.getElementById("drag-note").style.display = "none";
-      document.getElementById("link").style.display = "block";
+      document.getElementById("link").style.display = "none";
 
       scrollToTop();
     }
@@ -102,7 +102,7 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
       document.getElementById("cam-note").style.display = "none";
       document.getElementById("fireworks").style.display = "none";
       document.getElementById("drag-note").style.display = "none";
-      document.getElementById("link").style.display = "block";
+      document.getElementById("link").style.display = "none";
 
       document.getElementById("html").style.backgroundSize = "0px";
       document.body.style.backgroundSize = "0px";
@@ -127,7 +127,7 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
       document.getElementById("insta").style.display = "none";
       document.getElementById("fireworks").style.display = "none";
       document.getElementById("drag-note").style.display = "none";
-      document.getElementById("link").style.display = "block";
+      document.getElementById("link").style.display = "none";
 
       document.getElementById("html").style.backgroundSize = "0px";
       document.body.style.backgroundSize = "0px";
