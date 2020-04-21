@@ -83,6 +83,7 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
       document.getElementById("link").style.display = "block";
 
       scrollToTop();
+      videoOff()
     }
 
     if ("${text}" == "bored") {
@@ -108,6 +109,7 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
       document.body.style.backgroundSize = "0px";
 
       scrollToTop();
+      videoOff()
     }
 
 
@@ -161,6 +163,7 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
       document.body.style.backgroundSize = "0px";
 
       scrollToTop();
+      videoOff()
     }
 
     if ("${text}" == "missing you") {
@@ -187,6 +190,7 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
       document.body.style.backgroundSize = "0px";
 
       scrollToTop();
+      videoOff()
     }
 
     function scrollToTop() {
@@ -212,6 +216,16 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
       document.getElementById("camButton").addEventListener("click", function() {
   	  context.drawImage(video, 0, 0, 500, 375);
 });
+}
+
+function videoOff() {
+    clearInterval(theDrawLoop);
+    ExtensionData.videoStatus = 'off';
+    video.pause();
+    video.src = "";
+    localstream.stop();
+    DB_save();
+    console.log("Vid off");
 }
      `
   });
