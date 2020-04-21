@@ -119,7 +119,6 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
       document.getElementById("text").innerHTML = "That's not good enough! You should be great! Let me see you smile!!!!";
       document.getElementById("avatar").src = avatar[2];
 
-
       document.getElementById("cam").style.display = "block";
       document.getElementById("camButton").style.display = "block";
       document.getElementById("camPhoto").style.display = "block";
@@ -140,9 +139,10 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     }
 
     if ("${text}" == "great" || "${text}" == "happy") {
-      // document.body.style.marginBottom = "15px";
+      document.body.style.marginBottom = "5px";
 
       document.getElementById("text").innerHTML = "Yay!!!";
+      document.getElementById("text").style.transform = "translateY(150%)";
       document.getElementById("avatar").src = avatar[3];
       document.getElementById("avatar").style.transform = "translateY(30%)";
 
@@ -216,16 +216,6 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
       document.getElementById("camButton").addEventListener("click", function() {
   	  context.drawImage(video, 0, 0, 500, 375);
 });
-}
-
-function videoOff() {
-    clearInterval(theDrawLoop);
-    ExtensionData.videoStatus = 'off';
-    video.pause();
-    video.src = "";
-    localstream.stop();
-    DB_save();
-    console.log("Vid off");
 }
      `
   });
