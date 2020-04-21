@@ -1,23 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Girlfriend in Your Browser</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <met charset="utf-8">
+<html id="html">
+
+<head>
+  <title>Girlfriend in Your Browser</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <met charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="sketch.js"> </script>
-  </head>
+</head>
 
-  <body>
-    <div class="container">
-      <div class="text" id="text">  Hey you! How are you feeling? </div>
-      <div class="avatar"> <img id="avatar" src="images/myAvatar.png"> </div>
+<body>
+  <div class="content">
+    <div id="text"> Hey you! How are you feeling? </div>
+    <div> <img id="avatar" src="images/avatars/myAvatar.png"> </div>
+
+    <!-- html code from https://stackoverflow.com/questions/34762009/pulsing-heart-css-animation that sets up pulsing heart animation, which can be seen on this extension/site when you type "sad", "depressed", or "hurt" in the omnibox-->
+    <div class="sad" id="heart">
+      <img id="heart-img" class="bottom" src="https://goo.gl/nN8Haf">
     </div>
+    <div class="sad" id="cheerup-note"></div>
+
+      <div class="bored"> <img id="insta" src=""> </div>
+
+      <div class="fine"> <video autoplay="false" id="cam"> </video></div>
+      <div class="fine"> <button id="camButton"> Smile! <small>(Take A Photo)</small> </button> </div>
+      <div class="fine"> <canvas id="camPhoto" width="500" height="500"></canvas> </div>
+      <!-- //had to use in-line style, otherwise wouldn't be the right ratio and contents wouldn't center -->
+      <div class="fine">
+        <p id="cam-note"> Feel free to take more than one!<br><br>And you better send them all to me!!!</p>
+      </div>
+
+      <div class="happy"> <canvas id="fireworks"></canvas></div>
+      <div class="happy">
+        <p id="drag-note"> Click or Drag Mouse for More Fun!</p>
+      </div>
+
+      <div class="missing"> <a id="link" href=""></a> </div>
+    </div>
+
+
 
     <script type="text/javascript" src="background.js"> </script>
     <script type="text/javascript" src="script.js"> </script>
 
+</body>
 
-  </body>
 </html>

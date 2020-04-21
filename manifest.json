@@ -2,7 +2,7 @@
   "name": "Girlfriend in Your Browser",
   "manifest_version": 2,
   "version": "1.0",
-  "description": "This chrome extension is activates a virtual me to keep my boyfriend company",
+  "description": "This chrome extension creates a virtual version of me meant to keep you company. Extension includes 5 mood-response categories, webcam-features, animations, and a night-mode. Only works on accompanying site.",
   "omnibox": { "keyword": "Im" },
   "background": {
     "scripts": ["background.js"]
